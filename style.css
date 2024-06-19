@@ -1,0 +1,56 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap" rel="stylesheet');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("Untitled\ design\ \(2\).png"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    position: fixed;
+    border: 12px solid black;
+    padding: 10px 40px;
+    border-radius: 20px;
+    top: 9px;
+    right: 20px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Playwrite ES", cursive;
+}
+
+#board{
+    background: salmon;
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+}
+
+.head{
+    background: linear-gradient( red, greenyellow );
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: greenyellow;
+    border: .10vmin solid white;
+    border-radius: 10px;
+}
+
+.food{
+    background: linear-gradient( salmon, greenyellow );
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
